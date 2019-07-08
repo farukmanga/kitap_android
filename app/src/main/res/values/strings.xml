@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Kitap</string>
+    <string name="dialog_title">Yazar Seçiniz</string>
+    <string name="ok_label">TAMAM</string>
+    <string name="dismiss_label">ÇIKIŞ</string>
+    <string name="clear_label">TÜMÜNÜ TAMİZLE</string>
+    <string-array name="shopping_item">
+        <item>ali</item>
+        <item>mehmet</item>
+        <item>ömer</item>
+        <item>hasan</item>
+        <item>veli</item>
+        <item>ali</item>
+        <item>hüseyin</item>
+    </string-array>
+</resources>

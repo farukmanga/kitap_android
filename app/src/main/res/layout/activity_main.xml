@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.MainActivity">
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+
+        <TableRow>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Adı"
+                    android:textSize="19dp"
+                    android:textColor="@color/textcolor"/>
+
+            <EditText
+                    android:id="@+id/Et_ad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext"
+                    android:ems="10"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/bordercolor"/>
+
+        </TableRow>
+        <TableRow android:layout_height="83dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Resim"
+                    android:textSize="19dp"
+                    android:textColor="@color/textcolor"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:id="@+id/ivimage"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/add_image" />
+
+                <HorizontalScrollView
+                        android:id="@+id/horizontal_scroll"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="5">
+
+                    <LinearLayout
+                            android:id="@+id/image"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:orientation="horizontal"></LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_height="88dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Fiyatı"
+                    android:textSize="19dp"
+                    android:textColor="@color/textcolor"/>
+
+            <EditText
+                    android:id="@+id/Et_fiyat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:inputType="numberDecimal"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext"
+                    android:ems="10"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/bordercolor"/>
+
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Yayim Yılı"
+                    android:textSize="19dp"
+                    android:textColor="@color/textcolor" />
+
+            <EditText
+                    android:id="@+id/Et_yayim_yili"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext"
+                    android:ems="10"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/bordercolor" />
+
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Yazar"
+                    android:textSize="19dp"
+                    android:textColor="@color/textcolor" />
+
+            <TextView
+                    android:id="@+id/Txt_yazar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/bordercolor" />
+            <Button
+                    android:id="@+id/Btn_listele_yazar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/button"
+                    android:drawableLeft="@drawable/ic_list"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+            />
+
+        </TableRow>
+        <TableRow
+                android:layout_marginTop="10dp">
+
+            <Button
+                    android:id="@+id/Btn_listele"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:drawableLeft="@drawable/ic_list"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Listele"/>
+            <Button
+                    android:id="@+id/Btn_kaydet"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:drawableLeft="@drawable/ic_save"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="kaydet"/>
+
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
+
+
